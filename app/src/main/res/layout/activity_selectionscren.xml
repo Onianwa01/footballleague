@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Selectionscren">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/championsleague"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/championsleaguebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                android:text="click"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="@id/championsleague_tv"
+                app:layout_constraintTop_toBottomOf="@id/championsleague_tv" />
+
+
+            <TextView
+                android:id="@+id/championsleague_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="4dp"
+                android:text="Chapionsleague"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/championsleagueimg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/championslg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/laliga"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/championsleague">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/laliga_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/laligatrophy"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/laliga_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:text="laligaleague"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <Button
+                android:id="@+id/laligaleaguebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/laliga_tv"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/europa"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/laliga">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/europa_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:src="@drawable/europaleaguetrophy"/>
+
+            <TextView
+                android:id="@+id/Europa_tv"
+                android:layout_width="158dp"
+                android:layout_height="27dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Euorpaleaguecup"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_editor_absoluteX="247dp" />
+
+            <Button
+                android:id="@+id/europaleaguecupbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/Europa_tv"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/worldcup"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/europa">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/world_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:src="@drawable/worldcuptrophy"/>
+
+            <TextView
+                android:id="@+id/world_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:text="worldcuptrophy"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/worldcuptrophybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/world_tv"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carabao"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/worldcup">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/carabao_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:src="@drawable/carebaocup"/>
+
+
+            <TextView
+            android:id="@+id/carabao_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:text="carabaotrophy"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/carabaotrophybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click"
+            android:textStyle="bold"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/carabao_tv"
+            app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Eplcuptrophy"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/carabao">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Epl_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:src="@drawable/epltrophy"/>
+
+
+            <TextView
+                android:id="@+id/Epl_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Eplcuptrophy"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <Button
+                android:id="@+id/eplcuptrophybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/Epl_tv"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/frenchligue1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/Eplcuptrophy">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/frenchligue1_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:src="@drawable/frencjleague1"/>
+
+
+            <TextView
+                android:id="@+id/frenchligue1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:text="frenchligue1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <Button
+                android:id="@+id/Frenchligue1btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/frenchligue1_tv"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
